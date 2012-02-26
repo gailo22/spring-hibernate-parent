@@ -8,9 +8,17 @@
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<context:component-scan base-package="simple" />
+	<context:component-scan base-package="simple.controller" />
 
-	<!-- the application context definition for the springweb DispatcherServlet -->
-	<bean name="/hello.htm" class="simple.HelloController" />
+	<bean name="/hello.htm" class="simple.controller.HelloController" />
+ 
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/pages/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
 
 </beans>

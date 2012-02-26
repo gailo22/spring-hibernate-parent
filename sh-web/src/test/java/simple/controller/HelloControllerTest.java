@@ -1,10 +1,12 @@
-package simple;
+package simple.controller;
 
 import static org.junit.Assert.assertThat;
 
 import org.hamcrest.core.IsEqual;
 import org.junit.Test;
 import org.springframework.web.servlet.ModelAndView;
+
+import simple.controller.HelloController;
 
 public class HelloControllerTest {
 
@@ -17,6 +19,6 @@ public class HelloControllerTest {
         ModelAndView modelAndView = controller.handleRequest(null, null);	
         
         // Then
-        assertThat(modelAndView.getViewName(), IsEqual.equalTo("hello.jsp"));
+        assertThat(modelAndView.getViewName(), IsEqual.equalTo("hello"));
     }
 }

@@ -1,4 +1,4 @@
-package simple;
+package simple.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,7 +11,7 @@ public class HelloController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) {
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("hello.jsp");
+		modelAndView.setViewName("hello");
 		return modelAndView;
 	}
 
