@@ -24,7 +24,7 @@ public class WelcomeControllerTest {
 		// Given
 		WelcomeController controller = new WelcomeController();
 		// When
-		String viewName = controller.printWelcome(mockModelMap);
+		String viewName = controller.sayHello(mockModelMap);
 		// Then
 		assertThat(viewName, equalTo("welcome"));
 	}
