@@ -12,6 +12,15 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<springframework.version>3.1.1.RELEASE</springframework.version>
+		<hibernate.entitymanager.version>4.1.0.Final</hibernate.entitymanager.version>
+		<junit.version>4.10</junit.version>
+		<powermock.version>1.4.10</powermock.version>
+		<mockito.version>1.8.5</mockito.version>
+		<google.guava.version>10.0.1</google.guava.version>
+		<selenium.java.version>2.19.0</selenium.java.version>
+		<servlet.api.version>2.5</servlet.api.version>
+		<jetty.all.version>7.5.4.v20111024</jetty.all.version>
     </properties>
 	
 	<modules>
@@ -25,25 +34,72 @@
 	        <dependency>
 	            <groupId>junit</groupId>
 	            <artifactId>junit</artifactId>
-	            <version>4.10</version>
+	            <version>${junit.version}</version>
 	            <scope>test</scope>
 	            <type>jar</type>
 	        </dependency>
 			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-module-junit4</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-api-mockito</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>${mockito.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${google.guava.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.seleniumhq.selenium</groupId>
+			    <artifactId>selenium-java</artifactId>
+			    <version>${selenium.java.version}</version>
+			</dependency>
+			<dependency>
 				 <groupId>org.springframework</groupId>
 				 <artifactId>spring-context</artifactId>
-				 <version>3.1.1.RELEASE</version>
+				 <version>${springframework.version}</version>
 			</dependency>
 			<dependency>
 			    <groupId>org.springframework</groupId>
 			    <artifactId>spring-context-support</artifactId>
-			    <version>3.1.1.RELEASE</version>
+			    <version>${springframework.version}</version>
 			</dependency>
 			<dependency>
 			    <groupId>org.springframework</groupId>
 			    <artifactId>spring-web</artifactId>
-			    <version>3.1.1.RELEASE</version>
+			    <version>${springframework.version}</version>
 			</dependency>
+			<dependency>
+			    <groupId>org.springframework</groupId>
+			    <artifactId>spring-webmvc</artifactId>
+			    <version>${springframework.version}</version>
+			</dependency>
+		    <dependency>
+			    <groupId>org.hibernate</groupId>
+			    <artifactId>hibernate-entitymanager</artifactId>
+			    <version>${hibernate.entitymanager.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>javax.servlet</groupId>
+			    <artifactId>servlet-api</artifactId>
+			    <version>${servlet.api.version}</version>
+			</dependency>
+			<dependency>
+	            <groupId>org.eclipse.jetty.aggregate</groupId>
+	            <artifactId>jetty-all</artifactId>
+	            <version>${jetty.all.version}</version>
+	        </dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
