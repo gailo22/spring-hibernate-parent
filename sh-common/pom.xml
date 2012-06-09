@@ -7,9 +7,9 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
     
-    <artifactId>sh-repository</artifactId>
+    <artifactId>sh-common</artifactId>
     <packaging>jar</packaging>
-    <name>sh-repository</name>
+    <name>sh-common</name>
     <url>http://www.gailo22.com</url>
 
     <properties>
@@ -17,11 +17,6 @@
     </properties>
 
     <dependencies>
-		<dependency>
-            <groupId>com.gailo22</groupId>
-            <artifactId>sh-common</artifactId>
-			<version>${project.version}</version>
-        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
