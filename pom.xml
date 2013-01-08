@@ -24,6 +24,7 @@
     </properties>
 	
 	<modules>
+		<module>sh-common</module>
 		<module>sh-repository</module>
 		<module>sh-service</module>
 		<module>sh-web</module>
